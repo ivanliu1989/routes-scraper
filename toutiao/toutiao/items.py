@@ -11,4 +11,8 @@ import scrapy
 class ToutiaoItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    Num = scrapy.Field()
+    text = scrapy.Field()  # 评论内容
+    name = scrapy.Field()  # 评论者名字
+    like = scrapy.Field()  # 点赞数
+    reply = scrapy.Field()  # 回复数
