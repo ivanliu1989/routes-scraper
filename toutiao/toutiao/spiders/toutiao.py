@@ -10,7 +10,7 @@ import sys
 # sys.setdefaultencoding('utf-8')
 
 class Myspider(scrapy.Spider):
-    name = 'TouTiao'
+    name = 'toutiao'
     allowed_domains = ['snssdk.com']
     Num = 1
 
