@@ -67,3 +67,8 @@ Cookie: rewardsn=; wxtokenkey=777; wxuin=2711770575; devicetype=android-19; vers
 if __name__ == '__main__':
     crawler = WeiXinCrawler()
     crawler.crawl()
+
+
+from mongoengine import connect
+# 连接 mongodb，无需事先创建数据库
+connect('weixin', host='localhost', port=27017)
